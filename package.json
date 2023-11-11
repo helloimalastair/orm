@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+		"dev": "bun src/index.ts",
+    "migrate": "drizzle-kit generate:sqlite --schema=./src/schema.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "drizzle-kit": "^0.19.13",
+    "drizzle-orm": "^0.28.6",
+    "hono": "^3.9.2",
+    "nanoid": "^5.0.3"
+  }
+}
