@@ -2,7 +2,6 @@ import { Hono } from "hono";
 import seedDb from "./seed";
 import template from "./template";
 import type { Serve } from "bun";
-import { users } from "./schema";
 
 const app = new Hono();
 
